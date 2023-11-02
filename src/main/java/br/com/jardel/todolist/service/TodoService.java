@@ -33,12 +33,16 @@ public class TodoService {
         todorepository.save(todo);
         return list();
         
-    }
+    }   
 
     public List<Todo> delete( Long id){
         todorepository.deleteById(id);
         return list();
         
+    }
+
+    public List<Todo> update(long id) {
+        return null;
     }
     
 }
